@@ -58,7 +58,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "  html, body {\r\n    margin: 0;\r\n    font-family: 'Roboto', 'Noto', sans-serif;\r\n    -webkit-font-smoothing: antialiased;\r\n    background: #f1f1f1;\r\n    max-height: 368px;\r\n  }\r\n  app-toolbar {\r\n    background-color: #831b1c;\r\n    color: #fff;\r\n  }\r\n\r\n  paper-icon-button {\r\n    --paper-icon-button-ink-color: white;\r\n  }\r\n\r\n  paper-icon-button + [main-title] {\r\n    margin-left: 24px;\r\n  }\r\n  paper-progress {\r\n    display: block;\r\n    width: 100%;\r\n    --paper-progress-active-color: rgba(255, 255, 255, 0.5);\r\n    --paper-progress-container-color: transparent;\r\n  }\r\n  app-header {\r\n    @apply --layout-fixed-top;\r\n    color: #fff;\r\n    \\--app-header-background-rear-layer: {\r\n      background-color: #ef6c00;\r\n    };\r\n  }\r\n  app-drawer {\r\n    --app-drawer-scrim-background: rgba(0, 0, 100, 0.8);\r\n    \\--app-drawer-content-container: {\r\n      background-color: #B0BEC5;\r\n    }\r\n  }\r\n\r\n  a {\r\n    text-decoration: none;\r\n    font-size: inherit;\r\n    color: inherit;\r\n  }\r\n  .tabs {\r\n    height: 100%;\r\n    @apply --layout-horizontal;\r\n    @apply --layout-end-justified;\r\n    position: absolute;\r\n    right: 0px;\r\n  }\r\n  .tabs  a {\r\n    @apply --layout-vertical;\r\n    @apply --layout-center-center;\r\n    margin: 12px 16px 12px;\r\n  }\r\n\r\n  footer {\r\n    height: 50px;\r\n    width: 98%;\r\n    line-height: 50px;\r\n    text-align: right;\r\n    background-color: rgb(255, 255, 255);\r\n    font-size: 14px;\r\n    opacity: 0.9;\r\n  }\r\n\r\n\r\n  @media (max-width: 960px) {\r\n    a {\r\n      font-size: 15px;\r\n    }\r\n    .tabs  a {\r\n      margin: 8px 12px 8px;\r\n    }\r\n  \r\n  }\r\n  @media (max-width: 719px) {\r\n    a {\r\n      font-size: 12px;\r\n    }\r\n    .tabs  a {\r\n      margin: 2px 5px 2px;\r\n    }\r\n  \r\n  }\r\n", ""]);
 
 // exports
 
@@ -71,7 +71,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<app-toolbar></app-toolbar>\n<app-navbar></app-navbar>\n<router-outlet></router-outlet>\n\n"
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<app-drawer-layout>\r\n  <app-header-layout>\r\n    <app-header class=\"mainHeader\" condenses fixed effects=\"resize-title blend-background waterfall\" slot=\"header\">\r\n      <app-toolbar>\r\n        <img src=\"/assets/images/logo64.jpg\">\r\n        <div class=\"tabs\">\r\n            <a [routerLink]=\"['/']\" [routerLinkActive]=\"['router-link-active']\" [routerLinkActiveOptions]=\"{exact:true}\">Inicio</a>\r\n            <a [routerLink]=\"['/somos']\" [routerLinkActive]=\"['router-link-active']\" [routerLinkActiveOptions]=\"{exact:true}\">Quienes Somos</a>\r\n            <a [routerLink]=\"['/catalogo']\" [routerLinkActive]=\"['router-link-active']\" [routerLinkActiveOptions]=\"{exact:true}\">Catalogo</a>\r\n            <!--a [routerLink]=\"['/contactenos']\" [routerLinkActive]=\"['router-link-active']\" [routerLinkActiveOptions]=\"{exact:true}\">Contactenos</a-->\r\n          </div>\r\n      </app-toolbar>\r\n      <app-header reveals effects=\"waterfall\" slot=\"header\">\r\n\r\n        <app-toolbar class=\"toolbar\">\r\n          \r\n        </app-toolbar>\r\n\r\n      </app-header>\r\n    </app-header>\r\n    <router-outlet></router-outlet>\r\n    <footer style=\"position:fixed;bottom:0\">\r\n        Direccion: Calle 48 # 18 - 22 B. Colombia - Tel: (7) 6121078 - Barrancabermeja\r\n    </footer>\r\n  </app-header-layout>\r\n</app-drawer-layout>"
 
 /***/ }),
 
@@ -220,7 +220,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".content {\r\n  display: block;\r\n  max-width: 1000px;\r\n}\r\n.card-container {\r\n  display: inline-block;\r\n  width: 30%;\r\n  color: black;\r\n  text-decoration: none;\r\n}\r\npaper-card {\r\n  display: block;\r\n  margin: 5px;\r\n  \\--paper-card-header-image: {\r\n    height: 200px;\r\n  }\r\n}\r\npaper-card h2 {\r\n  margin: 4px;\r\n  font-weight: normal;\r\n}\r\npaper-card p {\r\n  margin: 4px;\r\n  color: #999;\r\n}\r\n.container1 {\r\n  display: block;\r\n}\r\n.container1 > * {\r\n  @apply --layout-flex;\r\n}\r\n\r\n@media (max-width: 960px) {\r\n  .content {\r\n    max-width: 800px;\r\n  }\r\n  .card-container {\r\n    width: 50%;\r\n  }\r\n}\r\n@media (max-width: 719px) {\r\n  .content {\r\n    max-width: 400px;\r\n  }\r\n  .card-container {\r\n    width: 100%;\r\n  }\r\n\r\n}\r\n\r\n", ""]);
 
 // exports
 
@@ -233,7 +233,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/catalogo/catalogo.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  catalogo works!\n</p>\n"
+module.exports = "<section id=\"about\">\r\n  <div class=\"container\">\r\n    <h3>Catalogo Bizarro!</h3>\r\n  </div>\r\n  <div class=\"container\">\r\n    <p>Estamos trabajando para tener un mostrario amplio que ofrecerte, estos son algunos de los productos que tenemos para ti:</p>\r\n  </div>\r\n  <div class=\"container container1\">\r\n    <a class=\"card-container\">\r\n      <paper-card image=\"/assets/images/muestra1.jpg\">\r\n        <div class=\"card-content\">\r\n          <h2>Baguette Selena</h2>\r\n        </div>\r\n      </paper-card>\r\n    </a>\r\n    <a class=\"card-container\">\r\n        <paper-card image=\"/assets/images/muestra3.jpg\">\r\n          <div class=\"card-content\">\r\n            <h2>Baguette Elia</h2>\r\n         </div>\r\n        </paper-card>\r\n      </a>\r\n      <a class=\"card-container\">\r\n          <paper-card image=\"/assets/images/muestra4.jpg\">\r\n            <div class=\"card-content\">\r\n              <h2>Shopping Mar</h2>\r\n            </div>\r\n          </paper-card>\r\n        </a>\r\n  </div>\r\n</section>"
 
 /***/ }),
 
@@ -303,7 +303,8 @@ CatalogoModule = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* NgModule */])({
         imports: [__WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* CommonModule */], __WEBPACK_IMPORTED_MODULE_3__catalogo_routing_module__["a" /* CatalogoRoutingModule */], __WEBPACK_IMPORTED_MODULE_4__shared_shared_module__["a" /* SharedModule */]],
         declarations: [__WEBPACK_IMPORTED_MODULE_2__catalogo_component__["a" /* CatalogoComponent */]],
-        exports: [__WEBPACK_IMPORTED_MODULE_2__catalogo_component__["a" /* CatalogoComponent */]]
+        exports: [__WEBPACK_IMPORTED_MODULE_2__catalogo_component__["a" /* CatalogoComponent */]],
+        schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["j" /* CUSTOM_ELEMENTS_SCHEMA */]]
     })
 ], CatalogoModule);
 
@@ -369,7 +370,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/contactenos/contactenos.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  contactenos works!\n</p>\n<form is=\"iron-form\" id=\"form\">\n  <div class=\"vertical layout\">\n    <div class=\"infoCorreo horizontal end-justified layout\">\n      Para multiples correos separar con una coma (,).\n    </div>\n    <paper-input id=\"de\" class=\"input-container\" label=\"De\">\n    </paper-input>\n    <paper-input id=\"para\" class=\"input-container\" label=\"Para\">\n    </paper-input>\n    <paper-input id=\"asunto\" class=\"input-container\" label=\"Asunto\">\n    </paper-input>\n    <paper-textarea id=\"contenido\" label=\"Contenido\">\n    </paper-textarea>\n  </div>\n</form>\n<div class=\"buttons\">\n  <paper-button class=\"button-general button-gral-afirmativo\" >Enviar</paper-button>\n  <paper-button class=\"button-general button-gral-negativo\">Cancelar</paper-button>\n</div>\n"
+module.exports = "<p>\r\n  contactenos works!\r\n</p>\r\n<div class=\"container\">\r\n  <paper-card >\r\n    <div class=\"card-content\">\r\n      <form is=\"iron-form\" id=\"form\">\r\n\r\n        <div class=\"vertical layout\">\r\n          <div class=\"infoCorreo horizontal end-justified layout\">\r\n            Para multiples correos separar con una coma (,).\r\n          </div>\r\n          <paper-input id=\"de\" class=\"input-container\" label=\"De\">\r\n          </paper-input>\r\n          <paper-input id=\"para\" class=\"input-container\" label=\"Para\">\r\n          </paper-input>\r\n          <paper-input id=\"asunto\" class=\"input-container\" label=\"Asunto\">\r\n          </paper-input>\r\n          <paper-textarea id=\"contenido\" label=\"Contenido\">\r\n          </paper-textarea>\r\n        </div>\r\n      </form>\r\n      <div class=\"buttons\">\r\n        <paper-button class=\"button-general button-gral-afirmativo\">Enviar</paper-button>\r\n        <paper-button class=\"button-general button-gral-negativo\">Cancelar</paper-button>\r\n      </div>\r\n    </div>\r\n  </paper-card>\r\n</div>"
 
 /***/ }),
 
@@ -494,7 +495,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "img {\r\n    display: block;\r\n    margin: auto;\r\n    width: 40%;\r\n}", ""]);
 
 // exports
 
@@ -507,7 +508,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/inicio/inicio.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  inicio works!\n</p>\n"
+module.exports = "<section>\r\n   <img class=\"center\" src=\"/assets/images/construccion.jpg\">\r\n</section>"
 
 /***/ }),
 
@@ -629,7 +630,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "  section {\r\n    padding: 88px 16px;\r\n  }\r\n  .container img {\r\n    max-width: 100%;\r\n    max-height: 80%;\r\n  }\r\n  .container h3 {\r\n    font-size: 32px;\r\n    font-weight: 300;\r\n    margin: 24px 0;\r\n  }\r\n  .container p {\r\n    line-height: 1.5;\r\n  }\r\n  .container > * {\r\n    @apply --layout-flex;\r\n  }\r\n  ", ""]);
 
 // exports
 
@@ -642,7 +643,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/quienes-somos/quienes-somos.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  quienes-somos works!\n</p>\n"
+module.exports = "<section id=\"about\">\r\n  <div class=\"container\">\r\n    <div>\r\n      <img src=\"/assets/images/logo.jpg\">\r\n    </div>\r\n    <div>\r\n      <h3>En Bizarro Somos Fabricantes!</h3>\r\n      <p>Contamos con referencias que se adaptan a las necesidades y a la diversidad de las mujeres de hoy: casuales, elegantes, frescas, modernas y conservadoras</p>\r\n      <p>Elige el diseño de tu preferencia y podrás adaptarlo a tu estilo.</p>\r\n    </div>\r\n  </div>\r\n</section> "
 
 /***/ }),
 
@@ -720,64 +721,6 @@ QuienesSomosModule = __decorate([
 
 /***/ }),
 
-/***/ "../../../../../src/app/shared/navbar/navbar.component.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, ":host {\n  border: 0 solid #e1e1e1;\n  border-bottom-width: 1px;\n  display: block;\n  height: 48px;\n  padding: 0 16px;\n}\n\nnav a {\n  color: #8f8f8f;\n  font-size: 14px;\n  font-weight: 500;\n  line-height: 48px;\n  margin-right: 20px;\n  text-decoration: none;\n  vertical-align: middle;\n  cursor: pointer;\n}\n\nnav a.router-link-active {\n  color: #106cc8;\n}\n", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ "../../../../../src/app/shared/navbar/navbar.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<nav>\n  <a [routerLink]=\"['/']\" [routerLinkActive]=\"['router-link-active']\" [routerLinkActiveOptions]=\"{exact:true}\">Inicio</a>\n  <a [routerLink]=\"['/somos']\" [routerLinkActive]=\"['router-link-active']\" [routerLinkActiveOptions]=\"{exact:true}\">Quienes Somos</a>\n  <a [routerLink]=\"['/catalogo']\" [routerLinkActive]=\"['router-link-active']\" [routerLinkActiveOptions]=\"{exact:true}\">Catalogo</a>\n  <a [routerLink]=\"['/contactenos']\" [routerLinkActive]=\"['router-link-active']\" [routerLinkActiveOptions]=\"{exact:true}\">Contactenos</a>\n</nav>\n"
-
-/***/ }),
-
-/***/ "../../../../../src/app/shared/navbar/navbar.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NavbarComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-/**
- * This class represents the navigation bar component.
- */
-var NavbarComponent = (function () {
-    function NavbarComponent() {
-    }
-    return NavbarComponent;
-}());
-NavbarComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
-        selector: 'app-navbar',
-        template: __webpack_require__("../../../../../src/app/shared/navbar/navbar.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/shared/navbar/navbar.component.css")],
-    })
-], NavbarComponent);
-
-//# sourceMappingURL=navbar.component.js.map
-
-/***/ }),
-
 /***/ "../../../../../src/app/shared/shared.module.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -789,18 +732,14 @@ NavbarComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__ = __webpack_require__("../../../platform-browser/@angular/platform-browser.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__toolbar_toolbar_component__ = __webpack_require__("../../../../../src/app/shared/toolbar/toolbar.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__navbar_navbar_component__ = __webpack_require__("../../../../../src/app/shared/navbar/navbar.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__codebakery_origami__ = __webpack_require__("../../../../@codebakery/origami/@codebakery/origami.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__codebakery_origami_collections__ = __webpack_require__("../../../../@codebakery/origami/@codebakery/origami/collections.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__codebakery_origami__ = __webpack_require__("../../../../@codebakery/origami/@codebakery/origami.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__codebakery_origami_collections__ = __webpack_require__("../../../../@codebakery/origami/@codebakery/origami/collections.es5.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
 
 
 
@@ -826,83 +765,24 @@ var SharedModule = SharedModule_1 = (function () {
 SharedModule = SharedModule_1 = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* NgModule */])({
         imports: [
-            __WEBPACK_IMPORTED_MODULE_9__codebakery_origami_collections__["a" /* AppElementsModule */],
+            __WEBPACK_IMPORTED_MODULE_7__codebakery_origami_collections__["a" /* AppElementsModule */],
             __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* CommonModule */],
             __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
             __WEBPACK_IMPORTED_MODULE_4__angular_http__["a" /* HttpModule */],
-            __WEBPACK_IMPORTED_MODULE_9__codebakery_origami_collections__["b" /* IronElementsModule */],
-            __WEBPACK_IMPORTED_MODULE_9__codebakery_origami_collections__["c" /* PaperElementsModule */],
-            __WEBPACK_IMPORTED_MODULE_8__codebakery_origami__["c" /* PolymerModule */].forRoot(),
+            __WEBPACK_IMPORTED_MODULE_7__codebakery_origami_collections__["b" /* IronElementsModule */],
+            __WEBPACK_IMPORTED_MODULE_7__codebakery_origami_collections__["c" /* PaperElementsModule */],
+            __WEBPACK_IMPORTED_MODULE_6__codebakery_origami__["c" /* PolymerModule */].forRoot(),
             __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* RouterModule */]
         ],
-        declarations: [__WEBPACK_IMPORTED_MODULE_6__toolbar_toolbar_component__["a" /* ToolbarComponent */], __WEBPACK_IMPORTED_MODULE_7__navbar_navbar_component__["a" /* NavbarComponent */]],
+        declarations: [],
         schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["j" /* CUSTOM_ELEMENTS_SCHEMA */]],
-        exports: [__WEBPACK_IMPORTED_MODULE_6__toolbar_toolbar_component__["a" /* ToolbarComponent */], __WEBPACK_IMPORTED_MODULE_7__navbar_navbar_component__["a" /* NavbarComponent */],
-            __WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* CommonModule */], __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */], __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* RouterModule */]]
+        exports: [__WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* CommonModule */], __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */], __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* RouterModule */]]
     })
 ], SharedModule);
 
 var SharedModule_1;
 //# sourceMappingURL=shared.module.js.map
-
-/***/ }),
-
-/***/ "../../../../../src/app/shared/toolbar/toolbar.component.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, ":host {\n  background-color: #106cc8;\n  color: rgba(255, 255, 255, 0.87);\n  display: block;\n  height: 48px;\n  padding: 0 16px;\n}\n\nh1 {\n  display: inline;\n  font-size: 20px;\n  font-weight: normal;\n  letter-spacing: 0.1px;\n  line-height: 48px;\n}\n\n.more {\n  float: right;\n  height: 24px;\n  margin-top: 12px;\n  width: 24px;\n}\n", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ "../../../../../src/app/shared/toolbar/toolbar.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<h1>Angular Seed</h1>\n<div class=\"more\"></div>\n"
-
-/***/ }),
-
-/***/ "../../../../../src/app/shared/toolbar/toolbar.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ToolbarComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-/**
- * This class represents the toolbar component.
- */
-var ToolbarComponent = (function () {
-    function ToolbarComponent() {
-    }
-    return ToolbarComponent;
-}());
-ToolbarComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
-        selector: 'app-toolbar',
-        template: __webpack_require__("../../../../../src/app/shared/toolbar/toolbar.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/shared/toolbar/toolbar.component.css")]
-    })
-], ToolbarComponent);
-
-//# sourceMappingURL=toolbar.component.js.map
 
 /***/ }),
 
