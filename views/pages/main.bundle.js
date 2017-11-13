@@ -71,7 +71,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<app-drawer-layout>\r\n  <app-header-layout>\r\n    <app-header class=\"mainHeader\" condenses fixed effects=\"resize-title blend-background waterfall\" slot=\"header\">\r\n      <app-toolbar>\r\n        <img src=\"/assets/images/logo64.jpg\">\r\n        <div class=\"tabs\">\r\n            <a [routerLink]=\"['/']\" [routerLinkActive]=\"['router-link-active']\" [routerLinkActiveOptions]=\"{exact:true}\">Inicio</a>\r\n            <a [routerLink]=\"['/somos']\" [routerLinkActive]=\"['router-link-active']\" [routerLinkActiveOptions]=\"{exact:true}\">Quienes Somos</a>\r\n            <a [routerLink]=\"['/catalogo']\" [routerLinkActive]=\"['router-link-active']\" [routerLinkActiveOptions]=\"{exact:true}\">Catalogo</a>\r\n            <!--a [routerLink]=\"['/contactenos']\" [routerLinkActive]=\"['router-link-active']\" [routerLinkActiveOptions]=\"{exact:true}\">Contactenos</a-->\r\n          </div>\r\n      </app-toolbar>\r\n      <app-header reveals effects=\"waterfall\" slot=\"header\">\r\n\r\n        <app-toolbar class=\"toolbar\">\r\n          \r\n        </app-toolbar>\r\n\r\n      </app-header>\r\n    </app-header>\r\n    <router-outlet></router-outlet>\r\n    <footer style=\"position:fixed;bottom:0\">\r\n        Direccion: Calle 48 # 18 - 22 B. Colombia - Tel: (7) 6121078 - Barrancabermeja\r\n    </footer>\r\n  </app-header-layout>\r\n</app-drawer-layout>"
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<app-drawer-layout>\r\n  <app-header-layout>\r\n    <app-header class=\"mainHeader\" condenses fixed effects=\"resize-title blend-background waterfall\" slot=\"header\">\r\n      <app-toolbar>\r\n        <img src=\"assets/images/logo64.jpg\">\r\n        <div class=\"tabs\">\r\n            <a [routerLink]=\"['/']\" [routerLinkActive]=\"['router-link-active']\" [routerLinkActiveOptions]=\"{exact:true}\">Inicio</a>\r\n            <a [routerLink]=\"['/somos']\" [routerLinkActive]=\"['router-link-active']\" [routerLinkActiveOptions]=\"{exact:true}\">Quienes Somos</a>\r\n            <a [routerLink]=\"['/catalogo']\" [routerLinkActive]=\"['router-link-active']\" [routerLinkActiveOptions]=\"{exact:true}\">Catalogo</a>\r\n            <!--a [routerLink]=\"['/contactenos']\" [routerLinkActive]=\"['router-link-active']\" [routerLinkActiveOptions]=\"{exact:true}\">Contactenos</a-->\r\n          </div>\r\n      </app-toolbar>\r\n      <app-header reveals effects=\"waterfall\" slot=\"header\">\r\n\r\n        <app-toolbar class=\"toolbar\">\r\n          \r\n        </app-toolbar>\r\n\r\n      </app-header>\r\n    </app-header>\r\n    <router-outlet></router-outlet>\r\n    <footer style=\"position:fixed;bottom:0\">\r\n        Direccion: Calle 48 # 18 - 22 B. Colombia - Tel: (7) 6121078 - Barrancabermeja\r\n    </footer>\r\n  </app-header-layout>\r\n</app-drawer-layout>"
 
 /***/ }),
 
@@ -233,7 +233,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/catalogo/catalogo.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<section id=\"about\">\r\n  <div class=\"container\">\r\n    <h3>Catalogo Bizarro!</h3>\r\n  </div>\r\n  <div class=\"container\">\r\n    <p>Estamos trabajando para tener un mostrario amplio que ofrecerte, estos son algunos de los productos que tenemos para ti:</p>\r\n  </div>\r\n  <div class=\"container container1\">\r\n    <a class=\"card-container\">\r\n      <paper-card image=\"/assets/images/muestra1.jpg\">\r\n        <div class=\"card-content\">\r\n          <h2>Baguette Selena</h2>\r\n        </div>\r\n      </paper-card>\r\n    </a>\r\n    <a class=\"card-container\">\r\n        <paper-card image=\"/assets/images/muestra3.jpg\">\r\n          <div class=\"card-content\">\r\n            <h2>Baguette Elia</h2>\r\n         </div>\r\n        </paper-card>\r\n      </a>\r\n      <a class=\"card-container\">\r\n          <paper-card image=\"/assets/images/muestra4.jpg\">\r\n            <div class=\"card-content\">\r\n              <h2>Shopping Mar</h2>\r\n            </div>\r\n          </paper-card>\r\n        </a>\r\n  </div>\r\n</section>"
+module.exports = "<section id=\"about\">\r\n  <div class=\"container\">\r\n    <h3>Catalogo Bizarro!</h3>\r\n  </div>\r\n  <div class=\"container\">\r\n    <p>Estamos trabajando para tener un mostrario amplio que ofrecerte, estos son algunos de los productos que tenemos para ti:</p>\r\n  </div>\r\n  <div class=\"container container1\">\r\n    <a class=\"card-container\">\r\n      <paper-card image=\"assets/images/muestra1.jpg\">\r\n        <div class=\"card-content\">\r\n          <h2>Baguette Selena</h2>\r\n        </div>\r\n      </paper-card>\r\n    </a>\r\n    <a class=\"card-container\">\r\n        <paper-card image=\"assets/images/muestra3.jpg\">\r\n          <div class=\"card-content\">\r\n            <h2>Baguette Elia</h2>\r\n         </div>\r\n        </paper-card>\r\n      </a>\r\n      <a class=\"card-container\">\r\n          <paper-card image=\"assets/images/muestra4.jpg\">\r\n            <div class=\"card-content\">\r\n              <h2>Shopping Mar</h2>\r\n            </div>\r\n          </paper-card>\r\n        </a>\r\n  </div>\r\n</section>"
 
 /***/ }),
 
@@ -508,7 +508,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/inicio/inicio.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<section>\r\n   <img class=\"center\" src=\"/assets/images/construccion.jpg\">\r\n</section>"
+module.exports = "<section>\r\n   <img class=\"center\" src=\"assets/images/construccion.jpg\">\r\n</section>"
 
 /***/ }),
 
@@ -643,7 +643,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/quienes-somos/quienes-somos.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<section id=\"about\">\r\n  <div class=\"container\">\r\n    <div>\r\n      <img src=\"/assets/images/logo.jpg\">\r\n    </div>\r\n    <div>\r\n      <h3>En Bizarro Somos Fabricantes!</h3>\r\n      <p>Contamos con referencias que se adaptan a las necesidades y a la diversidad de las mujeres de hoy: casuales, elegantes, frescas, modernas y conservadoras</p>\r\n      <p>Elige el diseño de tu preferencia y podrás adaptarlo a tu estilo.</p>\r\n    </div>\r\n  </div>\r\n</section> "
+module.exports = "<section id=\"about\">\r\n  <div class=\"container\">\r\n    <div>\r\n      <img src=\"assets/images/logo.jpg\">\r\n    </div>\r\n    <div>\r\n      <h3>En Bizarro Somos Fabricantes!</h3>\r\n      <p>Contamos con referencias que se adaptan a las necesidades y a la diversidad de las mujeres de hoy: casuales, elegantes, frescas, modernas y conservadoras</p>\r\n      <p>Elige el diseño de tu preferencia y podrás adaptarlo a tu estilo.</p>\r\n    </div>\r\n  </div>\r\n</section> "
 
 /***/ }),
 
