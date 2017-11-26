@@ -1,5 +1,12 @@
 webpackJsonp(["styles"],{
 
+/***/ "../../../../../src/assets/images/fondo.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "fondo.da21083ef93dbeb196f0.png";
+
+/***/ }),
+
 /***/ "../../../../../src/styles.css":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -35,7 +42,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\r\n.container {\r\n    @apply --layout-horizontal;\r\n    max-width: 800px;\r\n    margin: 0 auto;\r\n    \r\n  }\r\n  \r\n  @media (max-width: 600px) {\r\n    .container {\r\n      @apply --layout-vertical;\r\n    }\r\n  }", ""]);
+exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\r\n.container {\r\n    @apply --layout-horizontal;\r\n    max-width: 800px;\r\n    margin: 0 auto;\r\n    \r\n  }\r\n  \r\n  @media (max-width: 600px) {\r\n    .container {\r\n      @apply --layout-vertical;\r\n    }\r\n  }\r\n\r\n  body {\r\n    background-image: url(" + __webpack_require__("../../../../../src/assets/images/fondo.png") + ");\r\n    background-color: #cccccc;\r\n }", ""]);
 
 // exports
 

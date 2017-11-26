@@ -1,6 +1,92 @@
 [
-  "Edsger Dijkstra",
-  "Donald Knuth",
-  "Alan Turing",
-  "Grace Hopper"
+  {
+    "id": "antique",
+    "nombre": "Baguette antique",
+    "numero": 3
+  },
+  {
+    "id": "brisa",
+    "nombre": "Bandolera brisa",
+    "numero": 10
+  },
+  {
+    "id": "bryos",
+    "nombre": "Bandolera bryos",
+    "numero": 11
+  },
+  {
+    "id": "cordoba",
+    "nombre": "Bandolera cordoba",
+    "numero": 5
+  },
+  {
+    "id": "eyre",
+    "nombre": "Bandolera eyre",
+    "numero": 2
+  },
+  {
+    "id": "frida",
+    "nombre": "Bagwork frida",
+    "numero": 2
+  },
+  {
+    "id": "karla",
+    "nombre": "Talego karla",
+    "numero": 2
+  },
+  {
+    "id": "leiha",
+    "nombre": "Tula leiha",
+    "numero": 2
+  },
+  {
+    "id": "lorens",
+    "nombre": "Baguette lorens",
+    "numero": 2
+  },
+  {
+    "id": "mar",
+    "nombre": "Shopping mar",
+    "numero": 2
+  },
+  {
+    "id": "oviedo",
+    "nombre": "Shopping oviedo",
+    "numero": 2
+  },
+  {
+    "id": "padua",
+    "nombre": "Bandolera padua",
+    "numero": 2
+  },
+  {
+    "id": "poitiers",
+    "nombre": "Shopping poitiers",
+    "numero": 2
+  },
+  {
+    "id": "ravelo",
+    "nombre": "Bandolera ravelo",
+    "numero": 2
+  },
+  {
+    "id": "rennes",
+    "nombre": "Bandolera rennes",
+    "numero": 2
+  },
+  {
+    "id": "rosario",
+    "nombre": "Rosario",
+    "numero": 2
+  },
+  {
+    "id": "selena",
+    "nombre": "Baguette selena",
+    "numero": 2
+  },
+  {
+    "id": "stylo",
+    "nombre": "Baguette stilo",
+    "numero": 2
+  }
 ]

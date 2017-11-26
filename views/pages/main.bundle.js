@@ -40,9 +40,9 @@ var AppRoutingModule = (function () {
 AppRoutingModule = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* NgModule */])({
         imports: [
-            __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* RouterModule */].forRoot([])
+            __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* RouterModule */].forRoot([])
         ],
-        exports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* RouterModule */]]
+        exports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* RouterModule */]]
     })
 ], AppRoutingModule);
 
@@ -71,7 +71,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<app-drawer-layout>\r\n  <app-header-layout>\r\n    <app-header class=\"mainHeader\" condenses fixed effects=\"resize-title blend-background waterfall\" slot=\"header\">\r\n      <app-toolbar>\r\n        <img src=\"assets/images/logo64.jpg\">\r\n        <div class=\"tabs\">\r\n            <a [routerLink]=\"['/']\" [routerLinkActive]=\"['router-link-active']\" [routerLinkActiveOptions]=\"{exact:true}\">Inicio</a>\r\n            <a [routerLink]=\"['/somos']\" [routerLinkActive]=\"['router-link-active']\" [routerLinkActiveOptions]=\"{exact:true}\">Quienes Somos</a>\r\n            <a [routerLink]=\"['/catalogo']\" [routerLinkActive]=\"['router-link-active']\" [routerLinkActiveOptions]=\"{exact:true}\">Catalogo</a>\r\n            <!--a [routerLink]=\"['/contactenos']\" [routerLinkActive]=\"['router-link-active']\" [routerLinkActiveOptions]=\"{exact:true}\">Contactenos</a-->\r\n          </div>\r\n      </app-toolbar>\r\n      <app-header reveals effects=\"waterfall\" slot=\"header\">\r\n\r\n        <app-toolbar class=\"toolbar\">\r\n          \r\n        </app-toolbar>\r\n\r\n      </app-header>\r\n    </app-header>\r\n    <router-outlet></router-outlet>\r\n    <footer style=\"position:fixed;bottom:0\">\r\n        Direccion: Calle 48 # 18 - 22 B. Colombia - Tel: (7) 6121078 - Barrancabermeja\r\n    </footer>\r\n  </app-header-layout>\r\n</app-drawer-layout>"
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<app-drawer-layout>\r\n  <app-header-layout>\r\n    <app-header class=\"mainHeader\" condenses fixed effects=\"resize-title blend-background waterfall\" slot=\"header\">\r\n      <app-toolbar>\r\n        <img src=\"assets/images/logo64.jpg\">\r\n        <div class=\"tabs\">\r\n            <a [routerLink]=\"['/']\" [routerLinkActive]=\"['router-link-active']\" [routerLinkActiveOptions]=\"{exact:true}\">Inicio</a>\r\n            <a [routerLink]=\"['/somos']\" [routerLinkActive]=\"['router-link-active']\" [routerLinkActiveOptions]=\"{exact:true}\">Quienes Somos</a>\r\n            <a [routerLink]=\"['/catalogo']\" [routerLinkActive]=\"['router-link-active']\" [routerLinkActiveOptions]=\"{exact:true}\">Catalogo</a>\r\n            <!--a [routerLink]=\"['/contactenos']\" [routerLinkActive]=\"['router-link-active']\" [routerLinkActiveOptions]=\"{exact:true}\">Contactenos</a-->\r\n          </div>\r\n      </app-toolbar>\r\n      <app-header reveals effects=\"waterfall\" slot=\"header\">\r\n        <app-toolbar class=\"toolbar\">\r\n        </app-toolbar>\r\n      </app-header>\r\n    </app-header>\r\n    <router-outlet></router-outlet>\r\n    <br>\r\n    <br>\r\n    <br>\r\n    <br>\r\n    <footer style=\"position:fixed;bottom:0\">\r\n        Direccion: Calle 48 # 18 - 22 B. Colombia - Tel: (7) 6121078 - Barrancabermeja\r\n    </footer>\r\n  </app-header-layout>\r\n</app-drawer-layout>"
 
 /***/ }),
 
@@ -183,12 +183,14 @@ AppModule = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__catalogo_component__ = __webpack_require__("../../../../../src/app/catalogo/catalogo.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__detail_component_detail_component_component__ = __webpack_require__("../../../../../src/app/catalogo/detail.component/detail.component.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -200,15 +202,68 @@ var CatalogoRoutingModule = (function () {
 CatalogoRoutingModule = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* NgModule */])({
         imports: [
-            __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* RouterModule */].forChild([
-                { path: 'catalogo', component: __WEBPACK_IMPORTED_MODULE_2__catalogo_component__["a" /* CatalogoComponent */] }
+            __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* RouterModule */].forChild([
+                { path: 'catalogo', component: __WEBPACK_IMPORTED_MODULE_2__catalogo_component__["a" /* CatalogoComponent */] },
+                { path: 'producto/:id', component: __WEBPACK_IMPORTED_MODULE_3__detail_component_detail_component_component__["a" /* DetailComponent */] }
             ])
         ],
-        exports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* RouterModule */]]
+        exports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* RouterModule */]]
     })
 ], CatalogoRoutingModule);
 
 //# sourceMappingURL=catalogo-routing.module.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/catalogo/catalogo-service.service.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CatalogoServiceService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__("../../../../rxjs/_esm5/Observable.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/catch.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_observable_throw__ = __webpack_require__("../../../../rxjs/_esm5/add/observable/throw.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+var CatalogoServiceService = (function () {
+    function CatalogoServiceService(http) {
+        this.http = http;
+    }
+    CatalogoServiceService.prototype.get = function () {
+        return this.http.get('assets/data.json').map(function (res) { return res.json(); })
+            .catch(this.handleError);
+    };
+    CatalogoServiceService.prototype.handleError = function (error) {
+        var errMsg = (error.message) ? error.message :
+            error.status ? error.status + " - " + error.statusText : 'Server error';
+        console.error(errMsg);
+        return __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["a" /* Observable */].throw(errMsg);
+    };
+    return CatalogoServiceService;
+}());
+CatalogoServiceService = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injectable */])(),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */]) === "function" && _a || Object])
+], CatalogoServiceService);
+
+var _a;
+//# sourceMappingURL=catalogo-service.service.js.map
 
 /***/ }),
 
@@ -233,7 +288,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/catalogo/catalogo.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<section id=\"about\">\r\n  <div class=\"container\">\r\n    <h3>Catalogo Bizarro!</h3>\r\n  </div>\r\n  <div class=\"container\">\r\n    <p>Estamos trabajando para tener un mostrario amplio que ofrecerte, estos son algunos de los productos que tenemos para ti:</p>\r\n  </div>\r\n  <div class=\"container container1\">\r\n    <a class=\"card-container\">\r\n      <paper-card image=\"assets/images/muestra1.jpg\">\r\n        <div class=\"card-content\">\r\n          <h2>Baguette Selena</h2>\r\n        </div>\r\n      </paper-card>\r\n    </a>\r\n    <a class=\"card-container\">\r\n        <paper-card image=\"assets/images/muestra3.jpg\">\r\n          <div class=\"card-content\">\r\n            <h2>Baguette Elia</h2>\r\n         </div>\r\n        </paper-card>\r\n      </a>\r\n      <a class=\"card-container\">\r\n          <paper-card image=\"assets/images/muestra4.jpg\">\r\n            <div class=\"card-content\">\r\n              <h2>Shopping Mar</h2>\r\n            </div>\r\n          </paper-card>\r\n        </a>\r\n  </div>\r\n</section>"
+module.exports = "<section id=\"about\">\r\n  <div class=\"container\">\r\n    <h3>Catalogo Bizarro!</h3>\r\n  </div>\r\n  <div class=\"container\">\r\n    <p>Estamos trabajando para tener un mostrario amplio que ofrecerte, estos son algunos de los productos que tenemos para ti:</p>\r\n  </div>\r\n  <div class=\"container container1\">\r\n    <a *ngFor=\"let item of catalogo| async\" class=\"card-container\" href=\"producto/{{item.id}}\">\r\n      <paper-card [image]=\"getImagen(item)\">\r\n        <div class=\"card-content\">\r\n          <h2>{{item.nombre}}</h2>\r\n        </div>\r\n      </paper-card>\r\n    </a>\r\n  </div>\r\n</section>\r\n"
 
 /***/ }),
 
@@ -243,6 +298,7 @@ module.exports = "<section id=\"about\">\r\n  <div class=\"container\">\r\n    <
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CatalogoComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__catalogo_service_service__ = __webpack_require__("../../../../../src/app/catalogo/catalogo-service.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -253,10 +309,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var CatalogoComponent = (function () {
-    function CatalogoComponent() {
+    function CatalogoComponent(catalogoServiceService) {
+        this.catalogoServiceService = catalogoServiceService;
     }
     CatalogoComponent.prototype.ngOnInit = function () {
+        this.catalogo = this.catalogoServiceService.get();
+    };
+    CatalogoComponent.prototype.getImagen = function (item) {
+        return 'assets/images/' + item.id + '/' + item.id + ' (1).jpg';
     };
     return CatalogoComponent;
 }());
@@ -266,9 +328,10 @@ CatalogoComponent = __decorate([
         template: __webpack_require__("../../../../../src/app/catalogo/catalogo.component.html"),
         styles: [__webpack_require__("../../../../../src/app/catalogo/catalogo.component.css")]
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__catalogo_service_service__["a" /* CatalogoServiceService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__catalogo_service_service__["a" /* CatalogoServiceService */]) === "function" && _a || Object])
 ], CatalogoComponent);
 
+var _a;
 //# sourceMappingURL=catalogo.component.js.map
 
 /***/ }),
@@ -283,12 +346,18 @@ CatalogoComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__catalogo_component__ = __webpack_require__("../../../../../src/app/catalogo/catalogo.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__catalogo_routing_module__ = __webpack_require__("../../../../../src/app/catalogo/catalogo-routing.module.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__shared_shared_module__ = __webpack_require__("../../../../../src/app/shared/shared.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__detail_component_detail_component_component__ = __webpack_require__("../../../../../src/app/catalogo/detail.component/detail.component.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__catalogo_service_service__ = __webpack_require__("../../../../../src/app/catalogo/catalogo-service.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_angular4_carousel__ = __webpack_require__("../../../../angular4-carousel/index.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
 
 
 
@@ -301,14 +370,111 @@ var CatalogoModule = (function () {
 }());
 CatalogoModule = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* NgModule */])({
-        imports: [__WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* CommonModule */], __WEBPACK_IMPORTED_MODULE_3__catalogo_routing_module__["a" /* CatalogoRoutingModule */], __WEBPACK_IMPORTED_MODULE_4__shared_shared_module__["a" /* SharedModule */]],
-        declarations: [__WEBPACK_IMPORTED_MODULE_2__catalogo_component__["a" /* CatalogoComponent */]],
-        exports: [__WEBPACK_IMPORTED_MODULE_2__catalogo_component__["a" /* CatalogoComponent */]],
+        imports: [__WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* CommonModule */], __WEBPACK_IMPORTED_MODULE_3__catalogo_routing_module__["a" /* CatalogoRoutingModule */], __WEBPACK_IMPORTED_MODULE_4__shared_shared_module__["a" /* SharedModule */], __WEBPACK_IMPORTED_MODULE_7_angular4_carousel__["b" /* CarouselModule */]],
+        declarations: [__WEBPACK_IMPORTED_MODULE_2__catalogo_component__["a" /* CatalogoComponent */], __WEBPACK_IMPORTED_MODULE_5__detail_component_detail_component_component__["a" /* DetailComponent */]],
+        exports: [__WEBPACK_IMPORTED_MODULE_2__catalogo_component__["a" /* CatalogoComponent */], __WEBPACK_IMPORTED_MODULE_5__detail_component_detail_component_component__["a" /* DetailComponent */]],
+        providers: [__WEBPACK_IMPORTED_MODULE_6__catalogo_service_service__["a" /* CatalogoServiceService */]],
         schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["j" /* CUSTOM_ELEMENTS_SCHEMA */]]
     })
 ], CatalogoModule);
 
 //# sourceMappingURL=catalogo.module.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/catalogo/detail.component/detail.component.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".card {\r\n    max-width: 1200px;\r\n    margin: 40px auto;\r\n    padding: 20px 20px 50px;\r\n    color: #757575;\r\n    border-radius: 5px;\r\n    position: relative;\r\n    background-color: #fff;\r\n    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);\r\n    box-sizing: border-box;\r\n}", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/catalogo/detail.component/detail.component.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<section id=\"about\" *ngFor=\"let item of catalogo| async\">\n        <div class=\"container\" *ngIf=\"item.id==producto\">\n            <div style=\"width: 728px; height: 728px\">\n                <carousel [sources]=\"getImageSources(item.id,item.numero)\" [config]=\"config\"></carousel>\n              </div>\n        </div>\n    </section>\n    "
+
+/***/ }),
+
+/***/ "../../../../../src/app/catalogo/detail.component/detail.component.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DetailComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__catalogo_service_service__ = __webpack_require__("../../../../../src/app/catalogo/catalogo-service.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular4_carousel__ = __webpack_require__("../../../../angular4-carousel/index.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var DetailComponent = (function () {
+    function DetailComponent(activatedRoute, catalogoServiceService) {
+        this.activatedRoute = activatedRoute;
+        this.catalogoServiceService = catalogoServiceService;
+        this.config = {
+            verifyBeforeLoad: true,
+            log: false,
+            animation: true,
+            animationType: __WEBPACK_IMPORTED_MODULE_3_angular4_carousel__["a" /* AnimationConfig */].SLIDE,
+            autoplay: false,
+            autoplayDelay: 2000,
+            stopAutoplayMinWidth: 768
+        };
+    }
+    DetailComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.activatedRoute.params.subscribe(function (params) {
+            _this.producto = params['id'];
+            console.log(_this.producto);
+        });
+        this.catalogo = this.catalogoServiceService.get();
+    };
+    DetailComponent.prototype.getImagen = function (id, index) {
+        return 'assets/images/' + id + '/' + id + ' (' + index + ').jpg';
+    };
+    DetailComponent.prototype.getImageSources = function (id, index) {
+        var images = [];
+        for (var _i = 1; _i <= index; _i++) {
+            images.push('assets/images/' + id + '/' + id + ' (' + _i + ').jpg');
+        }
+        console.log(images);
+        return images;
+    };
+    return DetailComponent;
+}());
+DetailComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Component */])({
+        selector: 'app-detail.component',
+        template: __webpack_require__("../../../../../src/app/catalogo/detail.component/detail.component.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/catalogo/detail.component/detail.component.component.css")]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* ActivatedRoute */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__catalogo_service_service__["a" /* CatalogoServiceService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__catalogo_service_service__["a" /* CatalogoServiceService */]) === "function" && _b || Object])
+], DetailComponent);
+
+var _a, _b;
+//# sourceMappingURL=detail.component.component.js.map
 
 /***/ }),
 
@@ -337,11 +503,11 @@ var ContactenosRoutingModule = (function () {
 ContactenosRoutingModule = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* NgModule */])({
         imports: [
-            __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* RouterModule */].forChild([
+            __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* RouterModule */].forChild([
                 { path: 'contactenos', component: __WEBPACK_IMPORTED_MODULE_2__contactenos_component__["a" /* ContactenosComponent */] }
             ])
         ],
-        exports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* RouterModule */]]
+        exports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* RouterModule */]]
     })
 ], ContactenosRoutingModule);
 
@@ -474,12 +640,12 @@ var InicioRoutingModule = (function () {
 InicioRoutingModule = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* NgModule */])({
         imports: [
-            __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* RouterModule */].forChild([
+            __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* RouterModule */].forChild([
                 { path: '', component: __WEBPACK_IMPORTED_MODULE_2__inicio_component__["a" /* InicioComponent */] },
                 { path: 'inicio', component: __WEBPACK_IMPORTED_MODULE_2__inicio_component__["a" /* InicioComponent */] }
             ])
         ],
-        exports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* RouterModule */]]
+        exports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* RouterModule */]]
     })
 ], InicioRoutingModule);
 
@@ -610,11 +776,11 @@ var QuienesSomosRoutingModule = (function () {
 QuienesSomosRoutingModule = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* NgModule */])({
         imports: [
-            __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* RouterModule */].forChild([
+            __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* RouterModule */].forChild([
                 { path: 'somos', component: __WEBPACK_IMPORTED_MODULE_2__quienes_somos_component__["a" /* QuienesSomosComponent */] }
             ])
         ],
-        exports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* RouterModule */]]
+        exports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* RouterModule */]]
     })
 ], QuienesSomosRoutingModule);
 
@@ -732,14 +898,16 @@ QuienesSomosModule = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__ = __webpack_require__("../../../platform-browser/@angular/platform-browser.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__codebakery_origami__ = __webpack_require__("../../../../@codebakery/origami/@codebakery/origami.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__codebakery_origami_collections__ = __webpack_require__("../../../../@codebakery/origami/@codebakery/origami/collections.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_common_http__ = __webpack_require__("../../../common/@angular/common/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__codebakery_origami__ = __webpack_require__("../../../../@codebakery/origami/@codebakery/origami.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__codebakery_origami_collections__ = __webpack_require__("../../../../@codebakery/origami/@codebakery/origami/collections.es5.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -765,19 +933,20 @@ var SharedModule = SharedModule_1 = (function () {
 SharedModule = SharedModule_1 = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* NgModule */])({
         imports: [
-            __WEBPACK_IMPORTED_MODULE_7__codebakery_origami_collections__["a" /* AppElementsModule */],
+            __WEBPACK_IMPORTED_MODULE_8__codebakery_origami_collections__["a" /* AppElementsModule */],
             __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* CommonModule */],
             __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
-            __WEBPACK_IMPORTED_MODULE_4__angular_http__["a" /* HttpModule */],
-            __WEBPACK_IMPORTED_MODULE_7__codebakery_origami_collections__["b" /* IronElementsModule */],
-            __WEBPACK_IMPORTED_MODULE_7__codebakery_origami_collections__["c" /* PaperElementsModule */],
-            __WEBPACK_IMPORTED_MODULE_6__codebakery_origami__["c" /* PolymerModule */].forRoot(),
-            __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* RouterModule */]
+            __WEBPACK_IMPORTED_MODULE_4__angular_http__["b" /* HttpModule */],
+            __WEBPACK_IMPORTED_MODULE_8__codebakery_origami_collections__["b" /* IronElementsModule */],
+            __WEBPACK_IMPORTED_MODULE_8__codebakery_origami_collections__["c" /* PaperElementsModule */],
+            __WEBPACK_IMPORTED_MODULE_7__codebakery_origami__["c" /* PolymerModule */].forRoot(),
+            __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* RouterModule */],
+            __WEBPACK_IMPORTED_MODULE_6__angular_common_http__["a" /* HttpClientModule */]
         ],
         declarations: [],
         schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["j" /* CUSTOM_ELEMENTS_SCHEMA */]],
-        exports: [__WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* CommonModule */], __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */], __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* RouterModule */]]
+        exports: [__WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* CommonModule */], __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */], __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* RouterModule */], __WEBPACK_IMPORTED_MODULE_6__angular_common_http__["a" /* HttpClientModule */], __WEBPACK_IMPORTED_MODULE_4__angular_http__["b" /* HttpModule */]]
     })
 ], SharedModule);
 
