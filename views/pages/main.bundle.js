@@ -204,7 +204,7 @@ CatalogoRoutingModule = __decorate([
         imports: [
             __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* RouterModule */].forChild([
                 { path: 'catalogo', component: __WEBPACK_IMPORTED_MODULE_2__catalogo_component__["a" /* CatalogoComponent */] },
-                { path: 'producto/:id', component: __WEBPACK_IMPORTED_MODULE_3__detail_component_detail_component_component__["a" /* DetailComponent */] }
+                { path: 'catalogo/producto/:id', component: __WEBPACK_IMPORTED_MODULE_3__detail_component_detail_component_component__["a" /* DetailComponent */] }
             ])
         ],
         exports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* RouterModule */]]
@@ -288,7 +288,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/catalogo/catalogo.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<section id=\"about\">\r\n  <div class=\"container\">\r\n    <h3>Catalogo Bizarro!</h3>\r\n  </div>\r\n  <div class=\"container\">\r\n    <p>Estamos trabajando para tener un mostrario amplio que ofrecerte, estos son algunos de los productos que tenemos para ti:</p>\r\n  </div>\r\n  <div class=\"container container1\">\r\n    <a *ngFor=\"let item of catalogo| async\" class=\"card-container\" href=\"producto/{{item.id}}\">\r\n      <paper-card [image]=\"getImagen(item)\">\r\n        <div class=\"card-content\">\r\n          <h2>{{item.nombre}}</h2>\r\n        </div>\r\n      </paper-card>\r\n    </a>\r\n  </div>\r\n</section>\r\n"
+module.exports = "<section id=\"about\">\r\n  <div class=\"container\">\r\n    <h3>Catalogo Bizarro!</h3>\r\n  </div>\r\n  <div class=\"container\">\r\n    <p>Estamos trabajando para tener un mostrario amplio que ofrecerte, estos son algunos de los productos que tenemos para ti:</p>\r\n  </div>\r\n  <div class=\"container container1\">\r\n    <a *ngFor=\"let item of catalogo| async\" class=\"card-container\" [routerLink]=\"getRoute(item.id)\">\r\n      <paper-card [image]=\"getImagen(item)\">\r\n        <div class=\"card-content\">\r\n          <h2>{{item.nombre}}</h2>\r\n        </div>\r\n      </paper-card>\r\n    </a>\r\n  </div>\r\n</section>\r\n"
 
 /***/ }),
 
@@ -319,6 +319,9 @@ var CatalogoComponent = (function () {
     };
     CatalogoComponent.prototype.getImagen = function (item) {
         return 'assets/images/' + item.id + '/' + item.id + ' (1).jpg';
+    };
+    CatalogoComponent.prototype.getRoute = function (producto) {
+        return 'producto/' + producto;
     };
     return CatalogoComponent;
 }());
