@@ -1,0 +1,12 @@
+[
+  {
+    "id": "billeteras1",
+    "nombre": "Baguette antique",
+    "numero": 12
+  },
+  {
+    "id": "billeteras2",
+    "nombre": "Bandolera brisa",
+    "numero": 15
+  }
+]

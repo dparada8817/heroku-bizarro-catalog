@@ -22,7 +22,7 @@
   {
     "id": "eyre",
     "nombre": "Bandolera eyre",
-    "numero": 2
+    "numero": 10
   },
   {
     "id": "frida",
@@ -32,61 +32,61 @@
   {
     "id": "karla",
     "nombre": "Talego karla",
-    "numero": 2
+    "numero": 6
   },
   {
     "id": "leiha",
     "nombre": "Tula leiha",
-    "numero": 2
+    "numero": 6
   },
   {
     "id": "lorens",
     "nombre": "Baguette lorens",
-    "numero": 2
+    "numero": 4
   },
   {
     "id": "mar",
     "nombre": "Shopping mar",
-    "numero": 2
+    "numero": 4
   },
   {
     "id": "oviedo",
     "nombre": "Shopping oviedo",
-    "numero": 2
+    "numero": 11
   },
   {
     "id": "padua",
     "nombre": "Bandolera padua",
-    "numero": 2
+    "numero": 8
   },
   {
     "id": "poitiers",
     "nombre": "Shopping poitiers",
-    "numero": 2
+    "numero": 8
   },
   {
     "id": "ravelo",
     "nombre": "Bandolera ravelo",
-    "numero": 2
+    "numero": 4
   },
   {
     "id": "rennes",
     "nombre": "Bandolera rennes",
-    "numero": 2
+    "numero": 7
   },
   {
     "id": "rosario",
     "nombre": "Rosario",
-    "numero": 2
+    "numero": 21
   },
   {
     "id": "selena",
     "nombre": "Baguette selena",
-    "numero": 2
+    "numero": 3
   },
   {
     "id": "stylo",
     "nombre": "Baguette stilo",
-    "numero": 2
+    "numero": 3
   }
 ]
